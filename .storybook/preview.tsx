@@ -5,6 +5,7 @@ import { DocsContainer } from "./DocsContainer";
 import { Suspense, useEffect } from "react";
 import { I18nextProvider } from "react-i18next";
 import i18n, { languageMap } from "../src/i18n";
+import { Toaster } from "@/components/ui/sonner";
 
 const locales = Object.keys(languageMap).map((lang) => ({
   value: lang,
@@ -41,6 +42,15 @@ const WithI18next = (Story, context) => {
         <Story />
       </I18nextProvider>
     </Suspense>
+  );
+};
+
+const WithToaster = (Story) => {
+  return (
+    <>
+      <Toaster richColors />
+      <Story />
+    </>
   );
 };
 
@@ -82,6 +92,7 @@ const preview: Preview = {
       },
       defaultTheme: "light",
     }),
+    WithToaster,
   ],
 
   // tags: ["autodocs"],

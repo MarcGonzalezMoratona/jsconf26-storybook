@@ -1,3 +1,6 @@
 {
-  "Sign in": "Sign in"
+  "BUY_TICKETS": "BUY TICKETS",
+  "SOLD_OUT": "SOLD OUT",
+  "CONTACT": "CONTACT",
+  "PROCESSING_PAYMENT": "Processing payment..."
 }

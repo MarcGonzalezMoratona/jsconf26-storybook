@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { expect, fn } from "storybook/test";
 
-import { Button } from "../../components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 
 type Story = StoryObj<typeof meta>;
@@ -95,7 +95,7 @@ export default meta;
 
 export const Default: Story = {
   args: {
-    children: "Button",
+    children: "BUY_TICKETS",
     variant: "default",
   },
   play: async function ({ args, canvas, userEvent }) {
@@ -110,7 +110,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    children: "Disabled Button",
+    children: "SOLD_OUT",
     disabled: true,
   },
 };
@@ -119,7 +119,7 @@ export const Loading: Story = {
   args: {
     children: (
       <>
-        Estamos procesando tus datos...
+        BUY_TICKETS
         <Spinner />
       </>
     ),
@@ -129,7 +129,7 @@ export const Loading: Story = {
 export const CustomRender: Story = {
   render: (args) => (
     <Button {...args} className="bg-green-500">
-      Sign in
+      BUY_TICKETS
     </Button>
   ),
 };

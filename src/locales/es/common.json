@@ -1,3 +1,6 @@
 {
-  "Sign in": "Iniciar sesión"
+  "BUY_TICKETS": "COMPRAR ENTRADAS",
+  "SOLD_OUT": "ENTRADAS AGOTADAS",
+  "CONTACT": "CONTACTAR",
+  "PROCESSING_PAYMENT": "Procesando pago..."
 }
